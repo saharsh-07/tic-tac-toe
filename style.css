@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*///////////////*/
+
+
+body {
+  background: radial-gradient(300px, rgba(153, 209, 235, 0.5), rgb(241, 241, 208));
+  color: rgb(4, 28, 240);
+}
+
+h1 {
+  padding-block: 2rem 1rem;
+  font-size: 3rem;
+  width: 100%;
+  background-color: rgba(183, 172, 240, 0.801);
+  border-bottom: 4px dashed rgba(244, 117, 37, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  gap: 2rem;
+  aspect-ratio: 1 / 0.3;
+  margin-top: 5rem;
+}
+
+.player {
+  font-size: 2rem;
+}
+
+.player * {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-left: 1.1rem;
+  background-color: skyblue;
+}
+
+button:hover,
+button:active {
+  background-color: aqua;
+  opacity: 0.7;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.gameboard>* {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  aspect-ratio: 1 /1;
+}
+
+.box {
+  min-width: 13vh;
+  font-weight: 900;
+  color: rgba(74, 48, 28, 1);
+  font-size: 8vh;
+  aspect-ratio: 1 /1;
+  border: 2px solid silver;
+}
+
+.restart-btn {
+  background-color: khaki;
+  width: 10rem;
+  font-size: 1.5rem;
+  color: rgba(15, 79, 234, 0.9);
+  background-color: orchid;
+}
