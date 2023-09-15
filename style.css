@@ -158,25 +158,9 @@ h1 {
   min-width: 100vw;
   gap: 2rem;
   aspect-ratio: 1 / 0.3;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
-.player {
-  font-size: 2rem;
-}
-
-.player * {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  margin-left: 1.1rem;
-  background-color: skyblue;
-}
-
-button:hover,
-button:active {
-  background-color: aqua;
-  opacity: 0.7;
-}
 
 .gameboard {
   display: grid;
@@ -206,4 +190,24 @@ button:active {
   font-size: 1.5rem;
   color: rgba(15, 79, 234, 0.9);
   background-color: orchid;
+}
+
+.restart-btn {
+  display: none;
+}
+
+.restart-btn:hover,
+.restart-btn:focus {
+  background-color: aqua;
+}
+
+.resultMessage {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+  color: darkred;
+}
+
+.message {
+  font-size: 2rem;
 }
